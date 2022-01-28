@@ -15,7 +15,8 @@
 
 
 ## 介绍
-
+Personal blog based on open source project(vuepress-theme-vdoing). 
+基于vuepress-theme-vdoing的个人博客
 
 ## 许可证
 [MIT](https://github.com/Dovahkiin8625/vuepress-theme-vdoing/blob/master/LICENSE)
