@@ -19,6 +19,6 @@ Personal blog based on open source project(vuepress-theme-vdoing).
 基于vuepress-theme-vdoing的个人博客
 
 ## 许可证
-[MIT](https://github.com/Dovahkiin8625/vuepress-theme-vdoing/blob/master/LICENSE)
+[MIT](https://github.com/Dovahkiin8625/vancode/master/LICENSE)
 
-Copyright (c) 2019-present Evan Xu
+Copyright (c) 2019-present Vance L

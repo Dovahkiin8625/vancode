@@ -5,13 +5,13 @@
   "author": {
     "name": "Vance L"
   },
-  "homepage": "https://github.com/Dovahkiin8625/vuepress-theme-vdoing#readme",
+  "homepage": "https://github.com/Dovahkiin8625/vancode/tree/master#readme",
   "bugs": {
-    "url": "https://github.com/Dovahkiin8625/vuepress-theme-vdoing/issues"
+    "url": "https://github.com/Dovahkiin8625/vancode/tree/master/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dovahkiin8625/vuepress-theme-vdoing.git"
+    "url": "git+https://github.com/Dovahkiin8625/vancode/tree/master"
   },
   "keywords": [
     "documentation",
