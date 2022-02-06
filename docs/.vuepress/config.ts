@@ -146,7 +146,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       {
         text: '操作系统',
-        link: '/backend/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        link: '', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           {
             text: '操作系统基础',
@@ -155,39 +155,29 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       }, 
       {
-        text: '开发工具和方法论',
-        link: '/backend/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        text: '开发',
+        link: '', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           {
-            text: 'Docker',
-            link: ''
+            text: '工具',
+            items: [
+              {
+                text: 'Docker',
+                link: ''
+              },
+              {
+                text: 'git',
+                link: ''
+              },
+            ]
           },
           {
-            text: 'git',
+            text: '方法论',
             link: ''
           },
-          {
-            text: '',
-            link: ''
-          },
+          
         ],
       },  
-      {
-        text: '开发必备网站书签',
-        link: '/static/bookmark.html',
-        target:'_blank' 
-      },  
-      {
-        text: '其他',
-        link: '/backend/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-        items: [
-          {
-            text: '开发必备网站书签',
-            link: '/static/bookmark.html',
-            target:'_blank' 
-          }
-        ],
-      }, 
       {
         text: '索引',
         link: '/archives/',
