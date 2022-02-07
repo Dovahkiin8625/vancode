@@ -1,7 +1,7 @@
 <template>
   <aside class="blogger-wrapper card-box">
     <div class="avatar">
-      <img :src="blogger.avatar" alt="头像" title="北海虽赊，扶摇可接" />
+      <img :src="blogger.avatar" alt="头像" title="头像是博主家的贝贝" />
     </div>
     <div class="icons" v-if="social && social.icons && social.icons.length">
       <a

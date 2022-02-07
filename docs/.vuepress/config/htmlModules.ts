@@ -1,4 +1,4 @@
-import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
+import { VdoingThemeConfig } from '../../../vdoing/types'
 
 /** 插入自定义html模块 (可用于插入广告模块等)
  * {
