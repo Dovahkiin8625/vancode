@@ -1,5 +1,5 @@
 ---
-title: e-commerce-website-detail-page-architecture
+title: 电商网站的商品详情页系统架构
 date: 2022-01-30 10:24:56
 permalink: /pages/a67d81/
 categories:
@@ -9,6 +9,8 @@ tags:
   - 
 ---
 ## 电商网站的商品详情页系统架构
+
+e-commerce-website-detail-page-architecture
 
 ### 小型电商网站的商品详情页系统架构
 
