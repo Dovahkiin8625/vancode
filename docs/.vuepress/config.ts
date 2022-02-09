@@ -160,12 +160,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: '', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           {
-            text: '工具',
+            text: '版本管理',
             items: [
-              {
-                text: 'Docker',
-                link: ''
-              },
               {
                 text: 'git',
                 link: ''
@@ -173,9 +169,30 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             ]
           },
           {
-            text: '方法论',
-            link: ''
+            text: '项目部署',
+            items:[
+              {
+                text: 'Docker',
+                link: ''
+              }
+            ]
           },
+          {
+            text: '其他',
+            items: [
+              {
+                text: '生产力',
+                link: '/develop/productivity/'
+    
+              },
+              {
+                text: '方法论',
+                link: ''
+              }
+            ]
+          }
+
+
           
         ],
       },  
