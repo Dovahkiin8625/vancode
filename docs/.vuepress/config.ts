@@ -146,36 +146,31 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
-        text: '操作系统',
+        text: '开发运维',
         link: '', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           {
-            text: '操作系统基础',
-            link: ''
-          }
-        ],
-      }, 
-      {
-        text: '开发',
-        link: '', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-        items: [
-          {
-            text: '版本管理',
-            items: [
+            text: '部署和版本',
+            items:[
               {
                 text: 'git',
-                link: ''
+                link: '/develop/git/'
+              },
+              {
+                text: 'Docker',
+                link: '/develop/docker/'
               },
             ]
           },
           {
-            text: '项目部署',
+            text: '计算机基础',
             items:[
               {
-                text: 'Docker',
-                link: ''
+                text: '操作系统',
+                link: '/develop/os/'
               }
             ]
+
           },
           {
             text: '其他',
