@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+ 
+  vancode:
+    image: vancode
+    container_name: dvancode
+    volumes:
+      - "/var/log/vancode/nginx:/var/log/nginx"
+    environment:
+      - "TZ=Asia/Shanghai"
+    ports:
+      - 80:80
+    restart: always
+  

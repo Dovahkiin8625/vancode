@@ -118,7 +118,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             ],
           }
         ],
-      },      
+      },
+      {
+        text: '架构',
+        items: [
+          {
+            text: '负载均衡',
+            link: '/architecture/loadbalance/'
+          }
+        ],
+      },   
       {
         text: '数据库',
         link: '/database/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
