@@ -81,43 +81,28 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       {
         text: '算法',
-        link: '/algorithm/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        link: '/empty/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           {
             text: '算法基础',
             items: [
-              { text: '数据结构', link: '/note/html/' },
-              { text: '基础算法', link: '/note/css/' },
+              { text: '数据结构', link: '/empty/' },
+              { text: '基础算法', link: '/empty/' },
             ],
           },
           {
             text: '机器学习',
             items: [
-              { text: '时间序列', link: '/note/html/' },
-              { text: '异常检测', link: '/note/css/' },
+              { text: '时间序列', link: '/empty/' },
+              { text: '异常检测', link: '/empty/' },
             ],
           }
         ],
       },    
       {
         text: '大数据',
-        link: '/algorithm/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-        items: [
-          {
-            text: '算法基础',
-            items: [
-              { text: '数据结构', link: '/note/html/' },
-              { text: '基础算法', link: '/note/css/' },
-            ],
-          },
-          {
-            text: '机器学习',
-            items: [
-              { text: '时间序列', link: '/note/html/' },
-              { text: '异常检测', link: '/note/css/' },
-            ],
-          }
-        ],
+        link: '/empty/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+      
       },
       {
         text: '架构',
@@ -135,21 +120,21 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: 'SQL',
             items: [
-              { text: 'Sql基础', link: '/note/html/' },       
+              { text: 'Sql基础', link: '/empty/' },       
             ],
           },
           {
             text: 'NoSQL',
             items: [
-              { text: 'Sql基础', link: '/note/html/' },       
+              { text: 'Sql基础', link: '/empty/' },       
             ],
           },
           {
             text: 'TSDB',
             items: [
-              { text: 'InfluxDB', link: '/note/html/' },       
-              { text: 'OpenTSDB', link: '/note/html/' },       
-              { text: 'Taos', link: '/note/html/' },       
+              { text: 'InfluxDB', link: '/empty/' },       
+              { text: 'OpenTSDB', link: '/empty/' },       
+              { text: 'Taos', link: '/empty/' },       
             ],
           }
         ],
@@ -304,7 +289,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       'meta',
       {
         name: 'keywords',
-        content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
+        content: 'vancode,前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
       },
     ],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
