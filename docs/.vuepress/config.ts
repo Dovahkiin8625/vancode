@@ -6,13 +6,17 @@ import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
+// latex支持
+// import plugin from 'markdown-it-mathjax3' 
+
+// md.use(mathjax3);
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   // theme: 'vdoing', // 使用npm包主题
   theme: resolve(__dirname, '../../vdoing'), // 使用本地主题
 
   locales: {
-    '/':{
+    '/': {
       lang: 'zh-CN',
       title: "Vancode",
       description: 'Simplicity does not precede complexity, but follows it'
@@ -23,7 +27,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   // 主题配置
   themeConfig: {
-    
+
     // 导航配置
     nav: [
       { text: '首页', link: '/' },
@@ -36,20 +40,20 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: 'JavaScript',
             items: [
-              { text: 'JavaScript', link: '/note/javascript/' },
-              { text: 'TypeScript', link: '/note/typescript/' },
-              { text: 'ES6', link: '/note/es6/' },
-              { text: 'Vue.js', link: '/note/vue/' },
-              { text: 'React', link: '/note/react/' },
+              { text: 'JavaScript', link: '/frontend/javascript/' },
+              { text: 'TypeScript', link: '/frontend/typescript/' },
+              { text: 'ES6', link: '/frontend/es6/' },
+              { text: 'Vue.js', link: '/frontend/vue/' },
+              { text: 'React', link: '/frontend/react/' },
             ],
           },
           {
             text: 'CSS/HTML',
             items: [
-              { text: 'HTML', link: '/note/html/' },
-              { text: 'CSS', link: '/note/css/' },
-              { text: 'Stylus', link: '/note/stylus/' },
-              
+              { text: 'HTML', link: '/frontend/html/' },
+              { text: 'CSS', link: '/frontend/css/' },
+              { text: 'Stylus', link: '/frontend/stylus/' },
+
             ],
           },
           {
@@ -66,15 +70,15 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: 'Java',
             items: [
-              { text: 'Java', link: '/note/java/' },
-              { text: 'Spring', link: '/note/spring/' },        
+              { text: 'Java', link: '/backend/java/' },
+              { text: 'Spring', link: '/backend/spring/' },
             ],
           },
           {
             text: 'Python',
             items: [
-              { text: 'Python', link: '/note/python/' },
-              { text: 'Flask', link: '/note/flask/' },        
+              { text: 'Python', link: '/backend/python/' },
+              { text: 'Flask', link: '/backend/flask/' },
             ],
           }
         ],
@@ -93,16 +97,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '机器学习',
             items: [
-              { text: '时间序列', link: '/empty/' },
-              { text: '异常检测', link: '/empty/' },
+              { text: '时间序列', link: '/algorithm/ts/' },
+              { text: '异常检测', link: '/algorithm/ad/' },
             ],
           }
         ],
-      },    
+      },
       {
         text: '大数据',
         link: '/empty/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-      
+
       },
       {
         text: '架构',
@@ -112,7 +116,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             link: '/architecture/loadbalance/'
           }
         ],
-      },   
+      },
       {
         text: '数据库',
         link: '/database/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
@@ -120,21 +124,21 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: 'SQL',
             items: [
-              { text: 'Sql基础', link: '/empty/' },       
+              { text: 'Sql基础', link: '/empty/' },
             ],
           },
           {
             text: 'NoSQL',
             items: [
-              { text: 'Sql基础', link: '/empty/' },       
+              { text: 'Sql基础', link: '/empty/' },
             ],
           },
           {
             text: 'TSDB',
             items: [
-              { text: 'InfluxDB', link: '/empty/' },       
-              { text: 'OpenTSDB', link: '/empty/' },       
-              { text: 'Taos', link: '/empty/' },       
+              { text: 'InfluxDB', link: '/empty/' },
+              { text: 'OpenTSDB', link: '/empty/' },
+              { text: 'Taos', link: '/empty/' },
             ],
           }
         ],
@@ -145,7 +149,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           {
             text: '部署和版本',
-            items:[
+            items: [
               {
                 text: 'git',
                 link: '/develop/git/'
@@ -158,7 +162,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
           {
             text: '计算机基础',
-            items:[
+            items: [
               {
                 text: '操作系统',
                 link: '/develop/os/'
@@ -172,7 +176,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               {
                 text: '生产力',
                 link: '/develop/productivity/'
-    
+
               },
               {
                 text: '方法论',
@@ -182,9 +186,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           }
 
 
-          
+
         ],
-      },  
+      },
       {
         text: '索引',
         link: '/archives/',
@@ -194,7 +198,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '归档', link: '/archives/' },
         ],
       },
-      
+
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
@@ -395,6 +399,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         body:
           '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
       },
+      // 'yarn add vuepress-plugin-mathjax':{}
     },
 
     // "上次更新"的时间格式
@@ -406,6 +411,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   },
 
   markdown: {
-    lineNumbers: true
-  }
+    lineNumbers: true,
+    // extendMarkdown: md=>{
+    //   md.use(plugin)
+    // }
+  },
 })
