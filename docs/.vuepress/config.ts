@@ -1,19 +1,19 @@
 import { resolve } from 'path'
 import { defineConfig4CustomTheme } from 'vuepress/config'
 // import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
-import { VdoingThemeConfig } from '../../vdoing/types'
+import { VdoingThemeConfig } from '../../vancode/types'
 import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
 // latex支持
-// import plugin from 'markdown-it-mathjax3' 
+import plugin from 'markdown-it-mathjax3' 
 
 // md.use(mathjax3);
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   // theme: 'vdoing', // 使用npm包主题
-  theme: resolve(__dirname, '../../vdoing'), // 使用本地主题
+  theme: resolve(__dirname, '../../vancode'), // 使用本地主题
 
   locales: {
     '/': {
@@ -90,15 +90,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '算法基础',
             items: [
-              { text: '数据结构', link: '/empty/' },
+              { text: '数据结构',link: '/empty' },
               { text: '基础算法', link: '/empty/' },
             ],
           },
           {
-            text: '机器学习',
+            text: '人工智能',
             items: [
-              { text: '时间序列', link: '/algorithm/ts/' },
-              { text: '异常检测', link: '/algorithm/ad/' },
+              { text: '机器学习', link: '/algorithm/ml/' },
+              { text: '深度学习', link: '/empty/' },
+              { text: '强化学习', link: '/empty/' },
+              { text: '其他文章', link: '/empty/' },
             ],
           }
         ],
