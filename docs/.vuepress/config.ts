@@ -42,7 +42,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             items: [
               { text: 'JavaScript', link: '/frontend/javascript/' },
               { text: 'TypeScript', link: '/frontend/typescript/' },
-              { text: 'ES6', link: '/frontend/es6/' },
               { text: 'Vue.js', link: '/frontend/vue/' },
               { text: 'React', link: '/frontend/react/' },
             ],
@@ -52,14 +51,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             items: [
               { text: 'HTML', link: '/frontend/html/' },
               { text: 'CSS', link: '/frontend/css/' },
-              { text: 'Stylus', link: '/frontend/stylus/' },
-
             ],
           },
-          {
-            text: '组件素材',
-            link: 'pages/a61298/'
-          }
         ],
       },
 
@@ -68,17 +61,19 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: '/backend/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           {
-            text: 'Java',
+            text: '语言',
             items: [
               { text: 'Java', link: '/backend/java/' },
-              { text: 'Spring', link: '/backend/spring/' },
+              { text: 'Python', link: '/backend/python/' },
             ],
           },
           {
-            text: 'Python',
+            text: '框架',
             items: [
-              { text: 'Python', link: '/backend/python/' },
+              { text: 'Spring', link: '/backend/spring/' },
               { text: 'Flask', link: '/backend/flask/' },
+              { text: 'Djongo', link: '/empty/' },
+
             ],
           }
         ],
@@ -182,7 +177,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               },
               {
                 text: '方法论',
-                link: ''
+                link: '/empty/'
               }
             ]
           }
@@ -298,7 +293,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         content: 'vancode,前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
       },
     ],
-    ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
+    ['meta', { name: 'baidu-site-verification', content: 'code-8n9CESFEOS' }], // 百度统计的站长验证（你可以去掉）
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     // [
     //   'script',
@@ -388,11 +383,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     'vuepress-plugin-comment': {
       choosen: 'gitalk',
       options: {
-        clientID: 'a6e1355287947096b88b',
-        clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-        repo: 'blog-gitalk-comment', // GitHub 仓库
-        owner: 'Vance L', // GitHub仓库所有者
-        admin: ['Vance L'], // 对仓库有写权限的人
+        clientID: '4735fe39849997f119d8',
+        clientSecret: '5702769c4926221d3adea3e6bd87477f5e8685fe',
+        repo: 'vancode-commit', // GitHub 仓库
+        owner: 'Dovahkiin8625', // GitHub仓库所有者
+        admin: ['Dovahkiin8625'], // 对仓库有写权限的人
         // distractionFreeMode: true,
         pagerDirection: 'last', // 'first'正序 | 'last'倒序
         id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
@@ -414,8 +409,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   markdown: {
     lineNumbers: true,
-    // extendMarkdown: md=>{
-    //   md.use(plugin)
-    // }
+    extendMarkdown: md=>{
+      md.use(plugin)
+    }
   },
 })

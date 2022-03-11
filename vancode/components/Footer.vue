@@ -19,6 +19,13 @@
       title="本站主题"
       >Vancode</a
     >
+    |
+    <a
+      href="http://beian.miit.gov.cn/"
+      target="_blank"
+      title="备案"
+      >鲁ICP备2022007133号</a
+    >
     <template v-if="footer">
       | Copyright © {{ footer.createYear }}-{{ new Date().getFullYear() }}
       <span v-html="footer.copyrightInfo"></span>
