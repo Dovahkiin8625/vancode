@@ -47,10 +47,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             ],
           },
           {
-            text: 'CSS/HTML',
+            text: '素材',
             items: [
-              { text: 'HTML', link: '/frontend/html/' },
-              { text: 'CSS', link: '/frontend/css/' },
+              { text: 'JavaScript', link: '/frontend/resource/js/' },
+              { text: 'CSS', link: '/frontend/resource/css/' },
             ],
           },
         ],
@@ -87,6 +87,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             items: [
               { text: '数据结构',link: '/empty' },
               { text: '基础算法', link: '/empty/' },
+              { text: '图像处理', link: '/algorithm/imageprocessing/'}
             ],
           },
           {
@@ -102,6 +103,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       {
         text: '大数据',
+        link: '/empty/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+
+      },
+      {
+        text: '物联网',
         link: '/empty/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
 
       },
