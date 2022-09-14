@@ -65,6 +65,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             items: [
               { text: 'Java', link: '/backend/java/' },
               { text: 'Python', link: '/backend/python/' },
+              { text: 'Golang', link: '/backend/golang/'}
             ],
           },
           {
@@ -101,28 +102,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           }
         ],
       },
-      {
-        text: '大数据',
-        link: '/empty/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-
-      },
-      {
-        text: '物联网',
-        link: '/empty/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-
-      },
-      {
-        text: '架构',
+      { text: '大数据',link: '/empty/', },
+      { text: '物联网', link: '/empty/', },
+      { text: '架构',
         items: [
-          {
-            text: '负载均衡',
-            link: '/architecture/loadbalance/'
-          }
+          { text: '负载均衡',   link: '/architecture/loadbalance/' }
         ],
       },
       {
         text: '数据库',
-        link: '/database/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        link: '/database/',
         items: [
           {
             text: 'SQL',
@@ -153,38 +142,24 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '部署和版本',
             items: [
-              {
-                text: 'git',
-                link: '/develop/git/'
-              },
-              {
-                text: 'Docker',
-                link: '/develop/docker/'
-              },
+              { text: 'git', link: '/develop/git/' },
+              { text: 'Docker',link: '/develop/docker/' },
+              { text: 'Kubernetes', link: 'develop/kubernetes/'}
             ]
           },
           {
             text: '计算机基础',
             items: [
-              {
-                text: '操作系统',
-                link: '/develop/os/'
-              }
+              {   text: '操作系统', link: '/develop/os/' }
             ]
 
           },
           {
             text: '其他',
             items: [
-              {
-                text: '生产力',
-                link: '/develop/productivity/'
-
-              },
-              {
-                text: '方法论',
-                link: '/empty/'
-              }
+              { text: '生产力和工具', link: '/develop/productivity/' },
+              { text: '方法论', link: '/empty/' },
+              { text: '运维',link: '/maintenance/'}
             ]
           }
 
