@@ -7,7 +7,7 @@ import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
 // latex支持
-import plugin from 'markdown-it-mathjax3' 
+import plugin from 'markdown-it-mathjax3'
 
 // md.use(mathjax3);
 
@@ -47,10 +47,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             ],
           },
           {
+            text: 'CSS',
+            items: [
+              { text: 'sass', link: '/empty/' },
+              { text: 'less', link: '/empty/' }
+            ],
+          },
+          {
             text: '素材',
             items: [
-              { text: 'JavaScript', link: '/frontend/resource/js/' },
-              { text: 'CSS', link: '/frontend/resource/css/' },
+              { text: '素材', link: '/frontend/resource/' },
             ],
           },
         ],
@@ -65,7 +71,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             items: [
               { text: 'Java', link: '/backend/java/' },
               { text: 'Python', link: '/backend/python/' },
-              { text: 'Golang', link: '/backend/golang/'}
+              { text: 'Golang', link: '/backend/golang/' }
             ],
           },
           {
@@ -86,9 +92,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '算法基础',
             items: [
-              { text: '数据结构',link: '/empty' },
+              { text: '数据结构', link: '/empty' },
               { text: '基础算法', link: '/empty/' },
-              { text: '图像处理', link: '/algorithm/imageprocessing/'}
+              { text: '图像处理', link: '/algorithm/imageprocessing/' }
             ],
           },
           {
@@ -102,11 +108,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           }
         ],
       },
-      { text: '大数据',link: '/empty/', },
-      { text: '物联网', link: '/empty/', },
-      { text: '架构',
+      { text: '大数据', link: '/empty/', },
+      {
+        text: '架构',
         items: [
-          { text: '负载均衡',   link: '/architecture/loadbalance/' }
+          { text: '负载均衡', link: '/architecture/loadbalance/' }
         ],
       },
       {
@@ -136,35 +142,37 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
-        text: '开发运维',
+        text: '其他',
         link: '', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           {
             text: '部署和版本',
             items: [
-              { text: 'git', link: '/develop/git/' },
-              { text: 'Docker',link: '/develop/docker/' },
-              { text: 'Kubernetes', link: 'develop/kubernetes/'}
+              { text: '版本控制', link: '/develop/version/' },
+              { text: '容器化', link: '/develop/container/' },
             ]
           },
           {
-            text: '计算机基础',
+            text: '系统运维',
             items: [
-              {   text: '操作系统', link: '/develop/os/' }
+              { text: '操作系统', link: '/develop/os/' },
+              { text: '运维', link: '/maintenance/' }
             ]
-
           },
           {
-            text: '其他',
+            text: '物联网',
+            items: [
+              { text: '物联网', link: '/iot/' },
+            ]
+          },
+
+          {
+            text: '杂文',
             items: [
               { text: '生产力和工具', link: '/develop/productivity/' },
-              { text: '方法论', link: '/empty/' },
-              { text: '运维',link: '/maintenance/'}
+              { text: '方法论', link: '/develop/methodology/' }
             ]
-          }
-
-
-
+          },
         ],
       },
       {
@@ -390,7 +398,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   markdown: {
     lineNumbers: true,
-    extendMarkdown: md=>{
+    extendMarkdown: md => {
       md.use(plugin)
     }
   },
