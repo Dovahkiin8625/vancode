@@ -2,8 +2,8 @@
   "name": "vancode",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
+    "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs",
     "deploy": "bash deploy.sh",
     "editFm": "node utils/editFrontmatter.js",
     "baiduPush": "node utils/baiduPush.js https://www.vancode.top && bash baiduPush.sh",
